@@ -1,0 +1,2113 @@
+{
+  "info": {
+    "_postman_id": "d209701f-6b07-4a51-94fa-e43b519c0259",
+    "name": "beauty project",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "40324755",
+    "_collection_link": "https://go.postman.co/collection/40324755-d209701f-6b07-4a51-94fa-e43b519c0259?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "user",
+      "item": [
+        {
+          "name": "login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"contact\":\"9421069400\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/user/login",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "login verify",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"contact\":\"9421069400\",\r\n    \"otp\":\"123456\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/user/login/verify",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "login",
+                "verify"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "register",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"contact\":\"9421069400\",\r\n    \"name\":\"Shantanu\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/user/register",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "like productt",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"contact\":\"9421069400\",\r\n    \"name\":\"Shantanu\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/user/register",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "contact us",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"contact\":\"9421069400\",\r\n    \"name\":\"Shantanu\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/user/register",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "place order",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Cookie",
+                "value": "User_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZGQxNzMwMjM3YzVkODdiMzlmZTE3MSIsImlhdCI6MTc1OTk4NjcwMywiZXhwIjoxNzYwNTkxNTAzfQ.tUOl_JX3PdvV1mry5rif7tllvuGNq2eb4M_-bxHhduw; admin_auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZTYwYTNjY2I4ZWM3NzRhOGExNDZlNiIsImlhdCI6MTc1OTkwNjQ5MSwiZXhwIjoxNzYwNTExMjkxfQ.eZwxeNXupCfYXfr3On03glY_L6jMkiEkIDZwMWSp6P4"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"products\": [\n    {\n      \"productId\": \"68e64950cd3fbab4a706e465\",\n    //   \"Size\": \"M\",\n      \"quantity\": 2\n    },\n     {\n      \"productId\": \"68e64950cd3fbab4a706e466\",\n    //   \"Size\": \"M\",\n      \"quantity\": 1\n    }\n  ],\n//   \"totalAmount\": 1298,\n\n  \"points\":0,\n\n  \"address\": {\n    \"Name\": \"Shantanu Mohite\",\n    \"homeOrFlat\": \"Flat 204, Sai Residency\",\n    \"areaOrLocality\": \"Kothrud\",\n    \"pincode\": \"411038\",\n    \"landmark\": \"Near MIT College\",\n    \"latitude\": 18.5094,\n    \"longitude\": 73.8321\n  }\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/user/order/place",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "order",
+                "place"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "verify payments",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Cookie",
+                "value": "User_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZGQxNzMwMjM3YzVkODdiMzlmZTE3MSIsImlhdCI6MTc1OTk4NjcwMywiZXhwIjoxNzYwNTkxNTAzfQ.tUOl_JX3PdvV1mry5rif7tllvuGNq2eb4M_-bxHhduw; admin_auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZTYwYTNjY2I4ZWM3NzRhOGExNDZlNiIsImlhdCI6MTc1OTkwNjQ5MSwiZXhwIjoxNzYwNTExMjkxfQ.eZwxeNXupCfYXfr3On03glY_L6jMkiEkIDZwMWSp6P4"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"razorpay_order_id\":\"\",\n    \"razorpay_payment_id\":\"\",\n    \"razorpay_signature\":\"\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/user/payment/verify",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "payment",
+                "verify"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "sale order place",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Cookie",
+                "value": "User_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZGQxNzMwMjM3YzVkODdiMzlmZTE3MSIsImlhdCI6MTc1OTk4NjcwMywiZXhwIjoxNzYwNTkxNTAzfQ.tUOl_JX3PdvV1mry5rif7tllvuGNq2eb4M_-bxHhduw; admin_auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZTYwYTNjY2I4ZWM3NzRhOGExNDZlNiIsImlhdCI6MTc1OTkwNjQ5MSwiZXhwIjoxNzYwNTExMjkxfQ.eZwxeNXupCfYXfr3On03glY_L6jMkiEkIDZwMWSp6P4"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"products\": [\n    {\n      \"productId\": \"68e64950cd3fbab4a706e465\",\n    //   \"Size\": \"M\",\n      \"quantity\": 2\n    },\n     {\n      \"productId\": \"68e64950cd3fbab4a706e466\",\n    //   \"Size\": \"M\",\n      \"quantity\": 1\n    }\n  ],\n//   \"totalAmount\": 1298,\n\n  \"points\":0,\n\n  \"address\": {\n    \"Name\": \"Shantanu Mohite\",\n    \"homeOrFlat\": \"Flat 204, Sai Residency\",\n    \"areaOrLocality\": \"Kothrud\",\n    \"pincode\": \"411038\",\n    \"landmark\": \"Near MIT College\",\n    \"latitude\": 18.5094,\n    \"longitude\": 73.8321\n  }\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/user/order/place",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "order",
+                "place"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add to cart",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Cookie",
+                "value": "User_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZGQxNzMwMjM3YzVkODdiMzlmZTE3MSIsImlhdCI6MTc1OTk4NjcwMywiZXhwIjoxNzYwNTkxNTAzfQ.tUOl_JX3PdvV1mry5rif7tllvuGNq2eb4M_-bxHhduw; admin_auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZTYwYTNjY2I4ZWM3NzRhOGExNDZlNiIsImlhdCI6MTc1OTkwNjQ5MSwiZXhwIjoxNzYwNTExMjkxfQ.eZwxeNXupCfYXfr3On03glY_L6jMkiEkIDZwMWSp6P4"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"products\": [\n    {\n      \"productId\": \"68e64950cd3fbab4a706e465\",\n    //   \"Size\": \"M\",\n      \"quantity\": 2\n    },\n     {\n      \"productId\": \"68e64950cd3fbab4a706e466\",\n    //   \"Size\": \"M\",\n      \"quantity\": 1\n    }\n  ],\n//   \"totalAmount\": 1298,\n\n  \"points\":0,\n\n  \"address\": {\n    \"Name\": \"Shantanu Mohite\",\n    \"homeOrFlat\": \"Flat 204, Sai Residency\",\n    \"areaOrLocality\": \"Kothrud\",\n    \"pincode\": \"411038\",\n    \"landmark\": \"Near MIT College\",\n    \"latitude\": 18.5094,\n    \"longitude\": 73.8321\n  }\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/user/order/place",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "order",
+                "place"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get cart",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Cookie",
+                "value": "User_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZGQxNzMwMjM3YzVkODdiMzlmZTE3MSIsImlhdCI6MTc1OTk4NjcwMywiZXhwIjoxNzYwNTkxNTAzfQ.tUOl_JX3PdvV1mry5rif7tllvuGNq2eb4M_-bxHhduw; admin_auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZTYwYTNjY2I4ZWM3NzRhOGExNDZlNiIsImlhdCI6MTc1OTkwNjQ5MSwiZXhwIjoxNzYwNTExMjkxfQ.eZwxeNXupCfYXfr3On03glY_L6jMkiEkIDZwMWSp6P4"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"products\": [\n    {\n      \"productId\": \"68e64950cd3fbab4a706e465\",\n    //   \"Size\": \"M\",\n      \"quantity\": 2\n    },\n     {\n      \"productId\": \"68e64950cd3fbab4a706e466\",\n    //   \"Size\": \"M\",\n      \"quantity\": 1\n    }\n  ],\n//   \"totalAmount\": 1298,\n\n  \"points\":0,\n\n  \"address\": {\n    \"Name\": \"Shantanu Mohite\",\n    \"homeOrFlat\": \"Flat 204, Sai Residency\",\n    \"areaOrLocality\": \"Kothrud\",\n    \"pincode\": \"411038\",\n    \"landmark\": \"Near MIT College\",\n    \"latitude\": 18.5094,\n    \"longitude\": 73.8321\n  }\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/cart/get",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "cart",
+                "get"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete cart",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Cookie",
+                "value": "User_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZGQxNzMwMjM3YzVkODdiMzlmZTE3MSIsImlhdCI6MTc1OTk4NjcwMywiZXhwIjoxNzYwNTkxNTAzfQ.tUOl_JX3PdvV1mry5rif7tllvuGNq2eb4M_-bxHhduw; admin_auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZTYwYTNjY2I4ZWM3NzRhOGExNDZlNiIsImlhdCI6MTc1OTkwNjQ5MSwiZXhwIjoxNzYwNTExMjkxfQ.eZwxeNXupCfYXfr3On03glY_L6jMkiEkIDZwMWSp6P4"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"products\": [\n    {\n      \"productId\": \"68ea042c4d8a2dcdd11eb6bb\",\n    //   \"Size\": \"M\",\n      \"quantity\": 2\n    },\n     {\n      \"productId\": \"68e64950cd3fbab4a706e466\",\n    //   \"Size\": \"M\",\n      \"quantity\": 1\n    }\n  ],\n//   \"totalAmount\": 1298,\n\n  \"points\":0,\n\n  \"address\": {\n    \"Name\": \"Shantanu Mohite\",\n    \"homeOrFlat\": \"Flat 204, Sai Residency\",\n    \"areaOrLocality\": \"Kothrud\",\n    \"pincode\": \"411038\",\n    \"landmark\": \"Near MIT College\",\n    \"latitude\": 18.5094,\n    \"longitude\": 73.8321\n  }\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/cart/remove",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "cart",
+                "remove"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "verify register",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"contact\":\"9421069400\",\r\n    \"otp\":\"123456\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/user/verify-otp",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "verify-otp"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add address",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"address\": {\r\n    \"homeOrFlat\":\"A\",\r\n    \"areaOrLocality\":\"Mumbra\",\r\n    \"pincode\":\"431001\",\r\n    \"landmark\":\"mark\",\r\n    \"latitude\":213.123,\r\n    \"longitude\":14.203\r\n\r\n}\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/user/address/add",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "address",
+                "add"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete address",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"address\": {\r\n    \"homeOrFlat\":\"A\",\r\n    \"areaOrLocality\":\"Mumbra\",\r\n    \"pincode\":\"431001\",\r\n    \"landmark\":\"mark\",\r\n    \"latitude\":213.123,\r\n    \"longitude\":14.203\r\n\r\n}\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/user/address/delete/:addressId",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "address",
+                "delete",
+                ":addressId"
+              ],
+              "variable": [
+                {
+                  "key": "addressId",
+                  "value": "68e77ebbb8055f0ccd8e0acb"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get single product",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Cookie",
+                "value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZGQwYWZkN2RmNjJhYjlhOThlODI4OCIsImlhdCI6MTc1OTg5OTY1NCwiZXhwIjoxNzU5OTg2MDU0fQ.fIDVOUdrrLfL8sBaOgqPsif2nsIxA-LEheeWJRPoXlQ"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "type": "text",
+                  "key": "product_catagory",
+                  "value": "T-shirt"
+                },
+                {
+                  "type": "text",
+                  "key": "gender",
+                  "value": "Women",
+                  "disabled": true
+                },
+                {
+                  "type": "text",
+                  "key": "product_array",
+                  "value": " [\n  {\n    \"product_name\": \"Mango\",\n    \"product_Deatils\": \"Sweet and juicy Alphonso\",\n    \"product_description\": \"Fresh and naturally ripened Alphonso mangoes.\",\n    \"product_Highlight\": \"Premium quality, farm fresh\",\n    \"product_Quantity\": 50,\n    \"price_online\": 250,\n    \"price_offline\": 220\n  }\n]"
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[0]",
+                  "src": "postman-cloud:///1f045cb2-9a65-4690-a27d-a5411707c891"
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[0]",
+                  "src": "postman-cloud:///1f04b595-ba38-4120-8eeb-47ea0fb0eb1b"
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[1]",
+                  "value": null,
+                  "disabled": true
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[1]",
+                  "value": null,
+                  "disabled": true
+                },
+                {
+                  "type": "file",
+                  "key": "product_catagory_image",
+                  "value": null,
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/user/get/product/:innerId",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "get",
+                "product",
+                ":innerId"
+              ],
+              "variable": [
+                {
+                  "key": "innerId",
+                  "value": "68e9ee82f503d980a88fbe4d"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get single product Copy",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Cookie",
+                "value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZGQwYWZkN2RmNjJhYjlhOThlODI4OCIsImlhdCI6MTc1OTg5OTY1NCwiZXhwIjoxNzU5OTg2MDU0fQ.fIDVOUdrrLfL8sBaOgqPsif2nsIxA-LEheeWJRPoXlQ"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "type": "text",
+                  "key": "product_catagory",
+                  "value": "T-shirt"
+                },
+                {
+                  "type": "text",
+                  "key": "gender",
+                  "value": "Women",
+                  "disabled": true
+                },
+                {
+                  "type": "text",
+                  "key": "product_array",
+                  "value": " [\n  {\n    \"product_name\": \"Mango\",\n    \"product_Deatils\": \"Sweet and juicy Alphonso\",\n    \"product_description\": \"Fresh and naturally ripened Alphonso mangoes.\",\n    \"product_Highlight\": \"Premium quality, farm fresh\",\n    \"product_Quantity\": 50,\n    \"price_online\": 250,\n    \"price_offline\": 220\n  }\n]"
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[0]",
+                  "src": "postman-cloud:///1f045cb2-9a65-4690-a27d-a5411707c891"
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[0]",
+                  "src": "postman-cloud:///1f04b595-ba38-4120-8eeb-47ea0fb0eb1b"
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[1]",
+                  "value": null,
+                  "disabled": true
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[1]",
+                  "value": null,
+                  "disabled": true
+                },
+                {
+                  "type": "file",
+                  "key": "product_catagory_image",
+                  "value": null,
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/user/get/product/:innerId",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "get",
+                "product",
+                ":innerId"
+              ],
+              "variable": [
+                {
+                  "key": "innerId",
+                  "value": "68e9ee82f503d980a88fbe4d"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get sale",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Cookie",
+                "value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZGQwYWZkN2RmNjJhYjlhOThlODI4OCIsImlhdCI6MTc1OTg5OTY1NCwiZXhwIjoxNzU5OTg2MDU0fQ.fIDVOUdrrLfL8sBaOgqPsif2nsIxA-LEheeWJRPoXlQ"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "type": "text",
+                  "key": "product_catagory",
+                  "value": "T-shirt"
+                },
+                {
+                  "type": "text",
+                  "key": "gender",
+                  "value": "Women",
+                  "disabled": true
+                },
+                {
+                  "type": "text",
+                  "key": "product_array",
+                  "value": " [\n  {\n    \"product_name\": \"Mango\",\n    \"product_Deatils\": \"Sweet and juicy Alphonso\",\n    \"product_description\": \"Fresh and naturally ripened Alphonso mangoes.\",\n    \"product_Highlight\": \"Premium quality, farm fresh\",\n    \"product_Quantity\": 50,\n    \"price_online\": 250,\n    \"price_offline\": 220\n  }\n]"
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[0]",
+                  "src": "postman-cloud:///1f045cb2-9a65-4690-a27d-a5411707c891"
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[0]",
+                  "src": "postman-cloud:///1f04b595-ba38-4120-8eeb-47ea0fb0eb1b"
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[1]",
+                  "value": null,
+                  "disabled": true
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[1]",
+                  "value": null,
+                  "disabled": true
+                },
+                {
+                  "type": "file",
+                  "key": "product_catagory_image",
+                  "value": null,
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/user/get/sale",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "get",
+                "sale"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get middlware",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Cookie",
+                "value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZGQwYWZkN2RmNjJhYjlhOThlODI4OCIsImlhdCI6MTc1OTg5OTY1NCwiZXhwIjoxNzU5OTg2MDU0fQ.fIDVOUdrrLfL8sBaOgqPsif2nsIxA-LEheeWJRPoXlQ"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "type": "text",
+                  "key": "product_catagory",
+                  "value": "T-shirt"
+                },
+                {
+                  "type": "text",
+                  "key": "gender",
+                  "value": "Women",
+                  "disabled": true
+                },
+                {
+                  "type": "text",
+                  "key": "product_array",
+                  "value": " [\n  {\n    \"product_name\": \"Mango\",\n    \"product_Deatils\": \"Sweet and juicy Alphonso\",\n    \"product_description\": \"Fresh and naturally ripened Alphonso mangoes.\",\n    \"product_Highlight\": \"Premium quality, farm fresh\",\n    \"product_Quantity\": 50,\n    \"price_online\": 250,\n    \"price_offline\": 220\n  }\n]"
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[0]",
+                  "src": "postman-cloud:///1f045cb2-9a65-4690-a27d-a5411707c891"
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[0]",
+                  "src": "postman-cloud:///1f04b595-ba38-4120-8eeb-47ea0fb0eb1b"
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[1]",
+                  "value": null,
+                  "disabled": true
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[1]",
+                  "value": null,
+                  "disabled": true
+                },
+                {
+                  "type": "file",
+                  "key": "product_catagory_image",
+                  "value": null,
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/user/get/sale",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "get",
+                "sale"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get all orders",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Cookie",
+                "value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZGQwYWZkN2RmNjJhYjlhOThlODI4OCIsImlhdCI6MTc1OTg5OTY1NCwiZXhwIjoxNzU5OTg2MDU0fQ.fIDVOUdrrLfL8sBaOgqPsif2nsIxA-LEheeWJRPoXlQ"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "type": "file",
+                  "key": "product_images[0]",
+                  "src": "postman-cloud:///1f045cb2-9a65-4690-a27d-a5411707c891"
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[0]",
+                  "src": "postman-cloud:///1f04b595-ba38-4120-8eeb-47ea0fb0eb1b"
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[1]",
+                  "value": null,
+                  "disabled": true
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[1]",
+                  "value": null,
+                  "disabled": true
+                },
+                {
+                  "type": "file",
+                  "key": "product_catagory_image",
+                  "value": null,
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/user/get/order/place",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "get",
+                "order",
+                "place"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get all product",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Cookie",
+                "value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZGQwYWZkN2RmNjJhYjlhOThlODI4OCIsImlhdCI6MTc1OTg5OTY1NCwiZXhwIjoxNzU5OTg2MDU0fQ.fIDVOUdrrLfL8sBaOgqPsif2nsIxA-LEheeWJRPoXlQ"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "type": "text",
+                  "key": "product_catagory",
+                  "value": "T-shirt"
+                },
+                {
+                  "type": "text",
+                  "key": "gender",
+                  "value": "Women",
+                  "disabled": true
+                },
+                {
+                  "type": "text",
+                  "key": "product_array",
+                  "value": " [\n  {\n    \"product_name\": \"Mango\",\n    \"product_Deatils\": \"Sweet and juicy Alphonso\",\n    \"product_description\": \"Fresh and naturally ripened Alphonso mangoes.\",\n    \"product_Highlight\": \"Premium quality, farm fresh\",\n    \"product_Quantity\": 50,\n    \"price_online\": 250,\n    \"price_offline\": 220\n  }\n]"
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[0]",
+                  "src": "postman-cloud:///1f045cb2-9a65-4690-a27d-a5411707c891"
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[0]",
+                  "src": "postman-cloud:///1f04b595-ba38-4120-8eeb-47ea0fb0eb1b"
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[1]",
+                  "value": null,
+                  "disabled": true
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[1]",
+                  "value": null,
+                  "disabled": true
+                },
+                {
+                  "type": "file",
+                  "key": "product_catagory_image",
+                  "value": null,
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/user/get/all/user/product",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "get",
+                "all",
+                "user",
+                "product"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "recommanation",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Cookie",
+                "value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZGQwYWZkN2RmNjJhYjlhOThlODI4OCIsImlhdCI6MTc1OTg5OTY1NCwiZXhwIjoxNzU5OTg2MDU0fQ.fIDVOUdrrLfL8sBaOgqPsif2nsIxA-LEheeWJRPoXlQ"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "type": "text",
+                  "key": "product_catagory",
+                  "value": "T-shirt"
+                },
+                {
+                  "type": "text",
+                  "key": "gender",
+                  "value": "Women",
+                  "disabled": true
+                },
+                {
+                  "type": "text",
+                  "key": "product_array",
+                  "value": " [\n  {\n    \"product_name\": \"Mango\",\n    \"product_Deatils\": \"Sweet and juicy Alphonso\",\n    \"product_description\": \"Fresh and naturally ripened Alphonso mangoes.\",\n    \"product_Highlight\": \"Premium quality, farm fresh\",\n    \"product_Quantity\": 50,\n    \"price_online\": 250,\n    \"price_offline\": 220\n  }\n]"
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[0]",
+                  "src": "postman-cloud:///1f045cb2-9a65-4690-a27d-a5411707c891"
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[0]",
+                  "src": "postman-cloud:///1f04b595-ba38-4120-8eeb-47ea0fb0eb1b"
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[1]",
+                  "value": null,
+                  "disabled": true
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[1]",
+                  "value": null,
+                  "disabled": true
+                },
+                {
+                  "type": "file",
+                  "key": "product_catagory_image",
+                  "value": null,
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/user/get/all/user/product",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "get",
+                "all",
+                "user",
+                "product"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "-profile",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Cookie",
+                "value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZGQwYWZkN2RmNjJhYjlhOThlODI4OCIsImlhdCI6MTc1OTg5OTY1NCwiZXhwIjoxNzU5OTg2MDU0fQ.fIDVOUdrrLfL8sBaOgqPsif2nsIxA-LEheeWJRPoXlQ"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "type": "text",
+                  "key": "product_catagory",
+                  "value": "T-shirt"
+                },
+                {
+                  "type": "text",
+                  "key": "gender",
+                  "value": "Women",
+                  "disabled": true
+                },
+                {
+                  "type": "text",
+                  "key": "product_array",
+                  "value": " [\n  {\n    \"product_name\": \"Mango\",\n    \"product_Deatils\": \"Sweet and juicy Alphonso\",\n    \"product_description\": \"Fresh and naturally ripened Alphonso mangoes.\",\n    \"product_Highlight\": \"Premium quality, farm fresh\",\n    \"product_Quantity\": 50,\n    \"price_online\": 250,\n    \"price_offline\": 220\n  }\n]"
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[0]",
+                  "src": "postman-cloud:///1f045cb2-9a65-4690-a27d-a5411707c891"
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[0]",
+                  "src": "postman-cloud:///1f04b595-ba38-4120-8eeb-47ea0fb0eb1b"
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[1]",
+                  "value": null,
+                  "disabled": true
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[1]",
+                  "value": null,
+                  "disabled": true
+                },
+                {
+                  "type": "file",
+                  "key": "product_catagory_image",
+                  "value": null,
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/user/get/product/:innerId",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "user",
+                "get",
+                "product",
+                ":innerId"
+              ],
+              "variable": [
+                {
+                  "key": "innerId",
+                  "value": "68e60cf232fa4174f52c0b0e"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "admin",
+      "item": [
+        {
+          "name": "sale",
+          "item": [
+            {
+              "name": "create sale",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "flash_sale",
+                      "value": "Diwali Sale",
+                      "type": "text",
+                      "uuid": "a965990c-cc66-44e2-a98b-8d485c91d13a"
+                    },
+                    {
+                      "key": "flash_sale_start_date",
+                      "value": "2025-10-10",
+                      "type": "text",
+                      "uuid": "5297e22b-16cb-4e01-9545-a6dd6fc95205"
+                    },
+                    {
+                      "key": "flash_sale_end_date",
+                      "value": "2025-10-20",
+                      "type": "text",
+                      "uuid": "91921e93-b4b0-4867-b530-77aa47482a6f"
+                    },
+                    {
+                      "key": "flash_sale_products",
+                      "value": "[{\"product\":\"670fdc234ab12d3a4a92ff12\",\"discountType\":\"percentage\",\"discountValue\":20}]",
+                      "type": "text",
+                      "uuid": "a1669c7a-9e5f-4c20-a068-6133f2edd103"
+                    },
+                    {
+                      "key": "flash_sale_image",
+                      "type": "file",
+                      "uuid": "a591b4a2-84bd-4a18-b272-00dec4ea4cb5",
+                      "src": "postman-cloud:///1f045260-6de4-4870-bf00-a9e5efeddd77"
+                    },
+                    {
+                      "key": "flash_sale_start_time",
+                      "value": "10:30",
+                      "type": "text",
+                      "uuid": "ee5fa2d5-0746-466e-8021-a7a041bbc225"
+                    },
+                    {
+                      "key": "flash_sale_end_time",
+                      "value": "2:20",
+                      "type": "text",
+                      "uuid": "62e66082-a156-48b5-baa0-3f11c7730cee"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{Beauty_URL}}/api/admin/v1/sale/create",
+                  "host": [
+                    "{{Beauty_URL}}"
+                  ],
+                  "path": [
+                    "api",
+                    "admin",
+                    "v1",
+                    "sale",
+                    "create"
+                  ],
+                  "query": [
+                    {
+                      "key": "flash_sale",
+                      "value": "",
+                      "type": "text",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "get sale by Id",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "flash_sale",
+                      "value": "Diwali Sale",
+                      "type": "text",
+                      "uuid": "a965990c-cc66-44e2-a98b-8d485c91d13a"
+                    },
+                    {
+                      "key": "flash_sale_start_date",
+                      "value": "2025-10-10",
+                      "type": "text",
+                      "uuid": "5297e22b-16cb-4e01-9545-a6dd6fc95205"
+                    },
+                    {
+                      "key": "flash_sale_end_date",
+                      "value": "2025-10-20",
+                      "type": "text",
+                      "uuid": "91921e93-b4b0-4867-b530-77aa47482a6f"
+                    },
+                    {
+                      "key": "flash_sale_products",
+                      "value": "[{\"product\":\"670fdc234ab12d3a4a92ff12\",\"discountType\":\"percentage\",\"discountValue\":20}]",
+                      "type": "text",
+                      "uuid": "a1669c7a-9e5f-4c20-a068-6133f2edd103"
+                    },
+                    {
+                      "key": "flash_sale_image",
+                      "type": "file",
+                      "uuid": "a591b4a2-84bd-4a18-b272-00dec4ea4cb5",
+                      "src": "postman-cloud:///1f045260-6de4-4870-bf00-a9e5efeddd77"
+                    },
+                    {
+                      "key": "flash_sale_start_time",
+                      "value": "10:30",
+                      "type": "text",
+                      "uuid": "ee5fa2d5-0746-466e-8021-a7a041bbc225"
+                    },
+                    {
+                      "key": "flash_sale_end_time",
+                      "value": "2:20",
+                      "type": "text",
+                      "uuid": "62e66082-a156-48b5-baa0-3f11c7730cee"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{Beauty_URL}}/api/admin/v1/sale/:id",
+                  "host": [
+                    "{{Beauty_URL}}"
+                  ],
+                  "path": [
+                    "api",
+                    "admin",
+                    "v1",
+                    "sale",
+                    ":id"
+                  ],
+                  "query": [
+                    {
+                      "key": "flash_sale",
+                      "value": "",
+                      "type": "text",
+                      "disabled": true
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": "68e7456b4dd13fa1da0e5ce9"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "get all",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "flash_sale",
+                      "value": "Diwali Sale",
+                      "type": "text",
+                      "uuid": "a965990c-cc66-44e2-a98b-8d485c91d13a"
+                    },
+                    {
+                      "key": "flash_sale_start_date",
+                      "value": "2025-10-10",
+                      "type": "text",
+                      "uuid": "5297e22b-16cb-4e01-9545-a6dd6fc95205"
+                    },
+                    {
+                      "key": "flash_sale_end_date",
+                      "value": "2025-10-20",
+                      "type": "text",
+                      "uuid": "91921e93-b4b0-4867-b530-77aa47482a6f"
+                    },
+                    {
+                      "key": "flash_sale_products",
+                      "value": "[{\"product\":\"670fdc234ab12d3a4a92ff12\",\"discountType\":\"percentage\",\"discountValue\":20}]",
+                      "type": "text",
+                      "uuid": "a1669c7a-9e5f-4c20-a068-6133f2edd103"
+                    },
+                    {
+                      "key": "flash_sale_image",
+                      "type": "file",
+                      "uuid": "a591b4a2-84bd-4a18-b272-00dec4ea4cb5",
+                      "src": "postman-cloud:///1f045260-6de4-4870-bf00-a9e5efeddd77"
+                    },
+                    {
+                      "key": "flash_sale_start_time",
+                      "value": "10:30",
+                      "type": "text",
+                      "uuid": "ee5fa2d5-0746-466e-8021-a7a041bbc225"
+                    },
+                    {
+                      "key": "flash_sale_end_time",
+                      "value": "2:20",
+                      "type": "text",
+                      "uuid": "62e66082-a156-48b5-baa0-3f11c7730cee"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{Beauty_URL}}/api/admin/v1/sale/:id",
+                  "host": [
+                    "{{Beauty_URL}}"
+                  ],
+                  "path": [
+                    "api",
+                    "admin",
+                    "v1",
+                    "sale",
+                    ":id"
+                  ],
+                  "query": [
+                    {
+                      "key": "flash_sale",
+                      "value": "",
+                      "type": "text",
+                      "disabled": true
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": "68e7456b4dd13fa1da0e5ce9"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "add product",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Cookie",
+                "value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZGQwYWZkN2RmNjJhYjlhOThlODI4OCIsImlhdCI6MTc1OTg5OTY1NCwiZXhwIjoxNzU5OTg2MDU0fQ.fIDVOUdrrLfL8sBaOgqPsif2nsIxA-LEheeWJRPoXlQ"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "type": "text",
+                  "key": "product_catagory",
+                  "value": "T-shirt"
+                },
+                {
+                  "type": "text",
+                  "key": "gender",
+                  "value": "Women",
+                  "disabled": true
+                },
+                {
+                  "type": "text",
+                  "key": "product_array",
+                  "value": " [\n  {\n    \"product_name\": \"Mango\",\n    \"product_Deatils\": \"Sweet and juicy Alphonso\",\n    \"product_description\": \"Fresh and naturally ripened Alphonso mangoes.\",\n    \"product_Highlight\": \"Premium quality, farm fresh\",\n    \"product_Quantity\": 50,\n    \"price_online\": 250,\n    \"price_offline\": 220\n  }\n]"
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[0]",
+                  "src": "postman-cloud:///1f045cb2-9a65-4690-a27d-a5411707c891"
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[0]",
+                  "src": "postman-cloud:///1f04b595-ba38-4120-8eeb-47ea0fb0eb1b"
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[1]",
+                  "value": null,
+                  "disabled": true
+                },
+                {
+                  "type": "file",
+                  "key": "product_images[1]",
+                  "value": null,
+                  "disabled": true
+                },
+                {
+                  "type": "file",
+                  "key": "product_catagory_image",
+                  "value": null,
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/admin/v1/add/product",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "admin",
+                "v1",
+                "add",
+                "product"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add category",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "product_catagory",
+                  "value": "Lipstick",
+                  "type": "text",
+                  "uuid": "9b7722cc-79ba-47b2-afa5-aafea1ed33c1"
+                },
+                {
+                  "key": "product_catagory_image",
+                  "type": "file",
+                  "uuid": "4fa62576-dbc7-4ca0-96cf-54a296739947",
+                  "src": "postman-cloud:///1f045cb2-9a65-4690-a27d-a5411707c891"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/admin/v1/add/category",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "admin",
+                "v1",
+                "add",
+                "category"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get category",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{Beauty_URL}}/api/admin/v1/get/all/category",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "admin",
+                "v1",
+                "get",
+                "all",
+                "category"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get all product",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{Beauty_URL}}/api/admin/v1/get/all/category",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "admin",
+                "v1",
+                "get",
+                "all",
+                "category"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get all user",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{Beauty_URL}}/api/admin/v1/get/all/user",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "admin",
+                "v1",
+                "get",
+                "all",
+                "user"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get all count",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{Beauty_URL}}/api/admin/v1/get/all/user",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "admin",
+                "v1",
+                "get",
+                "all",
+                "user"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get all orders",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{Beauty_URL}}/api/admin/v1/get/all/user",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "admin",
+                "v1",
+                "get",
+                "all",
+                "user"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get single order",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{Beauty_URL}}/api/admin/v1/get/order/by/:orderId",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "admin",
+                "v1",
+                "get",
+                "order",
+                "by",
+                ":orderId"
+              ],
+              "variable": [
+                {
+                  "key": "orderId",
+                  "value": "68ecc47a65fd322a5cc19d08"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get single order Copy",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{Beauty_URL}}/api/admin/v1/get/order/by/:orderId",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "admin",
+                "v1",
+                "get",
+                "order",
+                "by",
+                ":orderId"
+              ],
+              "variable": [
+                {
+                  "key": "orderId",
+                  "value": "68ecc47a65fd322a5cc19d08"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update product and category",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "type": "text",
+                  "key": "product_catagory",
+                  "value": "Maskara"
+                },
+                {
+                  "type": "file",
+                  "key": "product_catagory_image",
+                  "src": "postman-cloud:///1f04b595-ba38-4120-8eeb-47ea0fb0eb1b"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/admin/v1/update/product/68e60c79b72d655afb48f090",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "admin",
+                "v1",
+                "update",
+                "product",
+                "68e60c79b72d655afb48f090"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update single product",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "type": "text",
+                  "key": "product_catagory",
+                  "value": "Maskara",
+                  "disabled": true
+                },
+                {
+                  "type": "file",
+                  "key": "product_images",
+                  "src": [
+                    "postman-cloud:///1f04b595-ba38-4120-8eeb-47ea0fb0eb1b",
+                    "postman-cloud:///1f06ec61-11b0-49d0-a84e-3cdf2a825df5",
+                    "postman-cloud:///1f04108d-417a-4ab0-a7b4-c465558f4fd6",
+                    "postman-cloud:///1f04c2bf-83dc-4db0-822b-bb241c374485"
+                  ]
+                },
+                {
+                  "key": "updated_data",
+                  "value": "{\"product_name\":\"Lipstick Standard\",\"price_online\":699,\"product_availability\":true}",
+                  "type": "text",
+                  "uuid": "c73efe3b-36d1-486c-b95a-621636fea9e9"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/admin/v1/update/product/68f23753f12275274c10427d/68f238e7f12275274c1042a9",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "admin",
+                "v1",
+                "update",
+                "product",
+                "68f23753f12275274c10427d",
+                "68f238e7f12275274c1042a9"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "login",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Cookie",
+                "value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZGQwYWZkN2RmNjJhYjlhOThlODI4OCIsImlhdCI6MTc1OTg5OTY1NCwiZXhwIjoxNzU5OTg2MDU0fQ.fIDVOUdrrLfL8sBaOgqPsif2nsIxA-LEheeWJRPoXlQ"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/admin/v1/login",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "admin",
+                "v1",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "login verify",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Cookie",
+                "value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZGQwYWZkN2RmNjJhYjlhOThlODI4OCIsImlhdCI6MTc1OTg5OTY1NCwiZXhwIjoxNzU5OTg2MDU0fQ.fIDVOUdrrLfL8sBaOgqPsif2nsIxA-LEheeWJRPoXlQ"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/admin/v1/login",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "admin",
+                "v1",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "resgiter",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Cookie",
+                "value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZGQwYWZkN2RmNjJhYjlhOThlODI4OCIsImlhdCI6MTc1OTg5OTY1NCwiZXhwIjoxNzU5OTg2MDU0fQ.fIDVOUdrrLfL8sBaOgqPsif2nsIxA-LEheeWJRPoXlQ"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/admin/v1/register",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "admin",
+                "v1",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "verify register",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Cookie",
+                "value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZGQwYWZkN2RmNjJhYjlhOThlODI4OCIsImlhdCI6MTc1OTg5OTY1NCwiZXhwIjoxNzU5OTg2MDU0fQ.fIDVOUdrrLfL8sBaOgqPsif2nsIxA-LEheeWJRPoXlQ"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/admin/v1/register",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "admin",
+                "v1",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "regsiter biling",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\":\"test@gmail.com\",\r\n    \"password\":\"Test@123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/admin/v1/add/biling/register",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "admin",
+                "v1",
+                "add",
+                "biling",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "biling softeware",
+      "item": [
+        {
+          "name": "create bill",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"customer_name\": \"Shantanu Mohite\",\r\n  \"phone\": \"9421069400\",\r\n  \"address\": \"Chhatrapati Sambhajinagar, Maharashtra\",\r\n  \"payment_method\": \"online\",\r\n  \"product_details\": [\r\n    {\r\n      \"product_Id\": \"68e64950cd3fbab4a706e465\",\r\n      \"product_quantity\": 2,\r\n      \"tax\":\"10\"\r\n    //   \"unit_price\":\"100\",\r\n    //   \"total_price\":\"1000\"\r\n    },\r\n    {\r\n      \"product_Id\": \"68e64950cd3fbab4a706e466\",\r\n      \"product_quantity\": 1,\r\n      \"tax\":\"10\"\r\n    //   \"unit_price\":\"100\",\r\n    //   \"total_price\":100\r\n    }\r\n  ]\r\n//   \"totalAmount\":\"100\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/biling_software/invoice",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "biling_software",
+                "invoice"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "login biling",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"customer_name\": \"Shantanu Mohite\",\r\n  \"phone\": \"9421069400\",\r\n  \"address\": \"Chhatrapati Sambhajinagar, Maharashtra\",\r\n  \"payment_method\": \"online\",\r\n  \"product_details\": [\r\n    {\r\n      \"product_Id\": \"68e64950cd3fbab4a706e465\",\r\n      \"product_quantity\": 2,\r\n      \"tax\":\"10\"\r\n    //   \"unit_price\":\"100\",\r\n    //   \"total_price\":\"1000\"\r\n    },\r\n    {\r\n      \"product_Id\": \"68e64950cd3fbab4a706e466\",\r\n      \"product_quantity\": 1,\r\n      \"tax\":\"10\"\r\n    //   \"unit_price\":\"100\",\r\n    //   \"total_price\":100\r\n    }\r\n  ]\r\n//   \"totalAmount\":\"100\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/biling_software/invoice",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "biling_software",
+                "invoice"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get all bils",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"customer_name\": \"Shantanu Mohite\",\r\n  \"phone\": \"9421069400\",\r\n  \"address\": \"Chhatrapati Sambhajinagar, Maharashtra\",\r\n  \"payment_method\": \"online\",\r\n  \"product_details\": [\r\n    {\r\n      \"product_Id\": \"68e64950cd3fbab4a706e465\",\r\n      \"product_quantity\": 2,\r\n      \"tax\":\"10\"\r\n    //   \"unit_price\":\"100\",\r\n    //   \"total_price\":\"1000\"\r\n    },\r\n    {\r\n      \"product_Id\": \"68e64950cd3fbab4a706e466\",\r\n      \"product_quantity\": 1,\r\n      \"tax\":\"10\"\r\n    //   \"unit_price\":\"100\",\r\n    //   \"total_price\":100\r\n    }\r\n  ]\r\n//   \"totalAmount\":\"100\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/biling_software/invoice",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "biling_software",
+                "invoice"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get all bils Copy",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"customer_name\": \"Shantanu Mohite\",\r\n  \"phone\": \"9421069400\",\r\n  \"address\": \"Chhatrapati Sambhajinagar, Maharashtra\",\r\n  \"payment_method\": \"online\",\r\n  \"product_details\": [\r\n    {\r\n      \"product_Id\": \"68e64950cd3fbab4a706e465\",\r\n      \"product_quantity\": 2,\r\n      \"tax\":\"10\"\r\n    //   \"unit_price\":\"100\",\r\n    //   \"total_price\":\"1000\"\r\n    },\r\n    {\r\n      \"product_Id\": \"68e64950cd3fbab4a706e466\",\r\n      \"product_quantity\": 1,\r\n      \"tax\":\"10\"\r\n    //   \"unit_price\":\"100\",\r\n    //   \"total_price\":100\r\n    }\r\n  ]\r\n//   \"totalAmount\":\"100\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/biling_software/number/invoice/:bill_number",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "biling_software",
+                "number",
+                "invoice",
+                ":bill_number"
+              ],
+              "variable": [
+                {
+                  "key": "bill_number",
+                  "value": "BILL-20251010-3191"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get product name",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"customer_name\": \"Shantanu Mohite\",\r\n  \"phone\": \"9421069400\",\r\n  \"address\": \"Chhatrapati Sambhajinagar, Maharashtra\",\r\n  \"payment_method\": \"online\",\r\n  \"product_details\": [\r\n    {\r\n      \"product_Id\": \"68e64950cd3fbab4a706e465\",\r\n      \"product_quantity\": 2,\r\n      \"tax\":\"10\"\r\n    //   \"unit_price\":\"100\",\r\n    //   \"total_price\":\"1000\"\r\n    },\r\n    {\r\n      \"product_Id\": \"68e64950cd3fbab4a706e466\",\r\n      \"product_quantity\": 1,\r\n      \"tax\":\"10\"\r\n    //   \"unit_price\":\"100\",\r\n    //   \"total_price\":100\r\n    }\r\n  ]\r\n//   \"totalAmount\":\"100\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/biling_software/number/invoice/:bill_number",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "biling_software",
+                "number",
+                "invoice",
+                ":bill_number"
+              ],
+              "variable": [
+                {
+                  "key": "bill_number",
+                  "value": "BILL-20251010-3191"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get product name Copy",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"customer_name\": \"Shantanu Mohite\",\r\n  \"phone\": \"9421069400\",\r\n  \"address\": \"Chhatrapati Sambhajinagar, Maharashtra\",\r\n  \"payment_method\": \"online\",\r\n  \"product_details\": [\r\n    {\r\n      \"product_Id\": \"68e64950cd3fbab4a706e465\",\r\n      \"product_quantity\": 2,\r\n      \"tax\":\"10\"\r\n    //   \"unit_price\":\"100\",\r\n    //   \"total_price\":\"1000\"\r\n    },\r\n    {\r\n      \"product_Id\": \"68e64950cd3fbab4a706e466\",\r\n      \"product_quantity\": 1,\r\n      \"tax\":\"10\"\r\n    //   \"unit_price\":\"100\",\r\n    //   \"total_price\":100\r\n    }\r\n  ]\r\n//   \"totalAmount\":\"100\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Beauty_URL}}/api/biling_software/number/invoice/:bill_number",
+              "host": [
+                "{{Beauty_URL}}"
+              ],
+              "path": [
+                "api",
+                "biling_software",
+                "number",
+                "invoice",
+                ":bill_number"
+              ],
+              "variable": [
+                {
+                  "key": "bill_number",
+                  "value": "BILL-20251010-3191"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
