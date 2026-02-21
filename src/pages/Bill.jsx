@@ -195,13 +195,12 @@ const Bill = ({ invoiceId: propInvoiceId, onClose }) => {
             onClick={handleClose}
         >
             <div
-                className="relative bg-white w-[600px] mb-10 rounded-lg shadow-xl font-sans flex flex-col"
+                className="relative bg-white w-[95%] sm:w-[600px] max-h-[95vh] rounded-lg shadow-xl font-sans flex flex-col"
                 onClick={(e) => e.stopPropagation()}
                 ref={printRef}
-                style={{ height: "600px" }}
             >
                 <div
-                    className="relative font-outfit h-24 sm:h-28 text-white flex items-center justify-between px-4 sm:px-8 bg-no-repeat bg-center"
+                    className="relative font-outfit h-24 sm:h-28 text-white flex items-center justify-between px-3 sm:px-8 bg-no-repeat bg-center"
                     style={{
                         backgroundImage: "url('/Group 4.png')",
                         backgroundSize: "cover",
@@ -228,7 +227,7 @@ const Bill = ({ invoiceId: propInvoiceId, onClose }) => {
                 </div>
 
                 {/* Invoice Body */}
-                <div className="px-8 py-6 min-h-[500px] overflow-y-auto flex-grow">
+                <div className="px-4 sm:px-8 py-4 sm:py-6 overflow-y-auto flex-grow">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                         <div>
                             <p className="text-gray-800 text-sm font-semibold">Customer,</p>
@@ -276,7 +275,7 @@ const Bill = ({ invoiceId: propInvoiceId, onClose }) => {
 
                     {/* Product Table */}
                     <div className="overflow-x-auto border border-pink-200 rounded-md -mx-4 sm:mx-0">
-                        <table className="w-full  border-collapse text-center text-xs">
+                        <table className="w-full border-collapse text-center text-[10px] sm:text-xs">
                             <thead>
                                 <tr className="bg-gradient-to-r from-[#FF007B] to-[#99004A] text-white">
                                     <th className="py-1 px-3 text-xs font-semibold ">Sr No</th>
@@ -290,11 +289,11 @@ const Bill = ({ invoiceId: propInvoiceId, onClose }) => {
                             <tbody>
                                 {mapProducts.map((item, index) => (
                                     <tr key={index} className="border-t text-gray-700">
-                                        <td className="py-2 px-3 text-xs border-r border-[#FFCCE5]">{index + 1}</td>
-                                        <td className="py-2 px-3 text-xs border-r border-[#FFCCE5]">{item.product_name}</td>
-                                        <td className="py-2 px-3 text-xs border-r border-[#FFCCE5]">{item.product_quantity}</td>
-                                        <td className="py-2 px-3 text-xs border-r border-[#FFCCE5]">₹{item.unit_price}</td>
-                                        <td className="py-2 px-3 text-xs border-r border-[#FFCCE5]">₹{item.total_price}</td>
+                                        <td className="py-1 px-2 text-[10px] sm:text-xs border-r border-[#FFCCE5]">{index + 1}</td>
+                                        <td className="py-1 px-2 text-[10px] sm:text-xs border-r border-[#FFCCE5]">{item.product_name}</td>
+                                        <td className="py-1 px-2 text-[10px] sm:text-xs border-r border-[#FFCCE5]">{item.product_quantity}</td>
+                                        <td className="py-1 px-2 text-[10px] sm:text-xs border-r border-[#FFCCE5]">₹{item.unit_price}</td>
+                                        <td className="py-1 px-2 text-[10px] sm:text-xs border-r border-[#FFCCE5]">₹{item.total_price}</td>
                                     </tr>
                                 ))}
                             </tbody>
@@ -302,7 +301,7 @@ const Bill = ({ invoiceId: propInvoiceId, onClose }) => {
                     </div>
 
                     {/* Payment and Summary */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 mt-6 text-sm gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 mt-4 sm:mt-6 text-xs sm:text-sm gap-4">
                         {/* Left side: Mode of Payment */}
                         <div>
                             <p className="text-[#FF007B] font-semibold">Mode of Payment</p>
@@ -325,7 +324,7 @@ const Bill = ({ invoiceId: propInvoiceId, onClose }) => {
                     </div>
 
                     {/* Signature Section */}
-                    <div className="mt-12 sm:mt-24 flex flex-col items-end">
+                    <div className="mt-8 sm:mt-24 flex flex-col items-end">
                         <p
                             className="text-3xl text-black leading-none mb-4"
                             style={{ fontFamily: '"Great Vibes", cursive' }}
@@ -342,7 +341,7 @@ const Bill = ({ invoiceId: propInvoiceId, onClose }) => {
                 </div>
 
                 {/*mt-auto*/}
-                <div className="w-full bg-gradient-to-r from-[#FF007B] to-[#CC0063] border-t border-pink-200 text-center text-sm text-white py-2 -mt-2">
+                <div className="w-full bg-gradient-to-r from-[#FF007B] to-[#CC0063] border-t border-pink-200 text-center text-[10px] sm:text-sm text-white py-2">
                     <p className="m-0">
                         Terms & Conditions: Payment due within 7 days. Returns accepted within 7 days if unopened. Seller not liable for misuse.
                     </p>
