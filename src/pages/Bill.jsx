@@ -195,7 +195,7 @@ const Bill = ({ invoiceId: propInvoiceId, onClose }) => {
             onClick={handleClose}
         >
             <div
-                className="relative bg-white w-[600px] mt-16 rounded-lg shadow-xl font-sans flex flex-col"
+                className="relative bg-white w-[600px] mb-10 rounded-lg shadow-xl font-sans flex flex-col"
                 onClick={(e) => e.stopPropagation()}
                 ref={printRef}
                 style={{ height: "600px" }}
